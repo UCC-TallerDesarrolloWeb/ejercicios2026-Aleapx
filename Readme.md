@@ -20,12 +20,12 @@
 -  [ ] Títulos
 -  [ ] Listas
 -  [ ] Link
--  [ ] Tablas I
--  [ ] Tablas II
--  [ ] Tablas III
--  [ ] Tablas VI
--  [ ] Comentarios
--  [ ] Formulario
+-  [X] Tablas I
+-  [X] Tablas II
+-  [X] Tablas III
+-  [X] Tablas VI
+-  [X] Comentarios
+-  [X] Formulario
 -  [ ] Accesibilidad
 -  [ ] Multimedia
 
