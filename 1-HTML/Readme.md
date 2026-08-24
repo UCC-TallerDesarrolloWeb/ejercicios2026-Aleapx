@@ -12,7 +12,7 @@ Empleando el template **ej_noticia**, incluir en la página 3 secciones mediante
 
 - En el **header** incluir una imagen y un título(la imagen debe ser descargada de internet e incluida en la carpeta "Ejercicios-HTML/imagenes")
 - En **main**, separar el texto en párrafos. Debe incluir la utilización de estilos (negrita, itálica y subrayado).
-- El **footer** debe contener el autor de la página
+- El **footer** debe contener el autor de la página.
 
 ### Ejercicio: Títulos
 
