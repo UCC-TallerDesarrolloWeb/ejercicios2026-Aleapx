@@ -1,0 +1,25 @@
+ h3{
+        font-family: "Source Sans 3", sans-serif;
+        text-shadow: 5px, 3px, rgb(40, 40, 40);
+    }
+
+body{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    background: linear-gradient(to right, rgb(58, 158, 252), rgb(5, 20, 218));
+}
+
+div{
+    border: 1px, solid, rgb(10, 107, 218);
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(0, 55, 255, 0.39);
+    border-radius: 25px;
+    box-shadow: 10px 8px rgb(0, 140, 255);
+}
+
+#user{
+    width: 10%;
+    float: left;
+    border-radius: 50%;
+}
