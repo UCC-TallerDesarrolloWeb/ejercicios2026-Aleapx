@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="tienda.css">
+    <script src="tienda.js"></script>
+</head>
+<body class="grid-container" onload="mostrarCarrito()">
+
+    <header class="item1">
+        <h1>Productos</h1>
+    </header>
+
+    <nav class="item2">
+        <a href="productos.html" class="btn-catalogo">Catálogo</a>
+        <a href="carrito.html" class="btn-carrito">Carrito de Compras (<span id="contador">0</span>)</a>
+    </nav>
+
+    <aside class="item3">
+        <h2>Resumen</h2>
+        <p>Total a pagar: <b id="total"></b></p>
+        <button onclick="vaciarCarrito()">Vaciar el Carrito</button>
+    </aside>
+
+    <main class="item4" id="listaCarrito">
+    </main>
+
+    <footer class="item5">
+        <p>Info de Contacto: 2513280@ucc.edu.ar</p>
+    </footer>
+
+</body>
+</html>

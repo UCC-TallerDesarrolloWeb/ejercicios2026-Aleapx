@@ -1,0 +1,96 @@
+:root {
+    --color-primario: rgb(120, 11, 11);
+    --color-secundario: rgb(35, 11, 120);
+    --color-texto: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid de toda la pagina */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'nav nav nav nav'
+        'aside main main main'
+        'footer footer footer footer';
+    gap: 10px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: aside; }
+.item4 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+/* Botones del nav */
+nav a {
+    display: inline-block;
+    padding: 5px;
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: background-color 0.5s, padding 0.5s;
+}
+
+.btn-catalogo {
+    background-color: var(--color-primario);
+}
+
+.btn-carrito {
+    background-color: var(--color-secundario);
+}
+
+.btn-catalogo:hover {
+    background-color: var(--color-secundario);
+    padding: 10px;
+}
+
+.btn-carrito:hover {
+    background-color: var(--color-primario);
+    padding: 10px;
+}
+
+/* Filtros */
+fieldset {
+    margin-bottom: 10px;
+}
+
+aside input[type="text"],
+aside input[type="number"] {
+    width: 120px;
+}
+
+/* Tarjetas de productos */
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.tarjeta {
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.item-carrito {
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-carrito img {
+    width: 100px;
+}
+
+dialog img {
+    width: 200px;
+}

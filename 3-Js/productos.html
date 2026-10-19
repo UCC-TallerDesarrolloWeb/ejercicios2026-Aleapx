@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos</title>
+    <link rel="stylesheet" href="tienda.css">
+    <script src="tienda.js"></script>
+</head>
+<body class="grid-container" onload="cargarProductos()">
+
+    <header class="item1">
+        <h1>Productos</h1>
+    </header>
+
+    <nav class="item2">
+        <a href="productos.html" class="btn-catalogo">Catálogo</a>
+        <a href="carrito.html" class="btn-carrito">Carrito de Compras (<span id="contador">0</span>)</a>
+    </nav>
+
+    <aside class="item3">
+        <fieldset>
+            <legend>Búsqueda</legend>
+            <label for="buscar">Buscar:</label>
+            <input type="text" id="buscar" onkeyup="filtrarProductos()">
+        </fieldset>
+
+        <fieldset>
+            <legend>Precios</legend>
+            <p>
+                <label for="precioMin">Mínimo:</label>
+                <input type="number" id="precioMin" onchange="filtrarProductos()">
+            </p>
+            <p>
+                <label for="precioMax">Máximo:</label>
+                <input type="number" id="precioMax" onchange="filtrarProductos()">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Marca</legend>
+            <select id="marca" onchange="filtrarProductos()">
+                <option value="todas">Todas</option>
+                <option value="Gran Marc">Gran Marc</option>
+                <option value="Daedo">Daedo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo de Productos</legend>
+            <p>
+                <input type="checkbox" id="protectores" name="categoria" value="Protectores" onchange="filtrarProductos()">
+                <label for="protectores">Protectores</label>
+            </p>
+            <p>
+                <input type="checkbox" id="entrenamiento" name="categoria" value="Entrenamiento" onchange="filtrarProductos()">
+                <label for="entrenamiento">Entrenamiento</label>
+            </p>
+            <p>
+                <input type="checkbox" id="doboks" name="categoria" value="Dobok" onchange="filtrarProductos()">
+                <label for="doboks">Doboks</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ordenar</legend>
+            <select id="orden" onchange="filtrarProductos()">
+                <option value="">Sin orden</option>
+                <option value="menor">Precio: menor a mayor</option>
+                <option value="mayor">Precio: mayor a menor</option>
+                <option value="az">Nombre: A-Z</option>
+                <option value="za">Nombre: Z-A</option>
+            </select>
+        </fieldset>
+    </aside>
+
+    <main class="item4" id="catalogo">
+    </main>
+
+    <footer class="item5">
+        <p>Info de Contacto: 2513280@ucc.edu.ar</p>
+    </footer>
+
+    <dialog id="detalle">
+        <div id="contenidoDetalle"></div>
+        <button onclick="cerrarDetalle()">Cerrar</button>
+    </dialog>
+
+</body>
+</html>
