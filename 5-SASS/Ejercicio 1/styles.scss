@@ -1,0 +1,36 @@
+@import "variables";
+
+@mixin colores($fondo, $letra) {
+    background-color: $fondo;
+    color: $letra;
+}
+
+@import "anidados";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    @include colores($color-primario, $color-claro);
+    padding: 20px;
+}
+
+nav {
+    @include colores($color-secundario, white);
+}
+
+section {
+    padding: 20px;
+
+    h2 {
+        color: $color-secundario;
+    }
+}
+
+footer {
+    @include colores($color-primario, $color-claro);
+    padding: 10px;
+    text-align: center;
+}

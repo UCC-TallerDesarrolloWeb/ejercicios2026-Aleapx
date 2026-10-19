@@ -1,0 +1,23 @@
+nav {
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 15px;
+
+            a {
+                color: $color-claro;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}
